@@ -1,0 +1,23 @@
+{
+  "name": "automation-playwright-beginer",
+  "version": "1.0.0",
+  "description": "Automation practice",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/at76408-droid/Automation-Playwright-beginer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/at76408-droid/Automation-Playwright-beginer/issues"
+  },
+  "homepage": "https://github.com/at76408-droid/Automation-Playwright-beginer#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  }
+}
