@@ -4,11 +4,11 @@ test("flipKart", async ({page}) => {
 console.log("Web Page Open");
 await page.goto("https://demoblaze.com/");
 
- const titleOfPage =page.title();
+ const titleOfPage = await page.title();
 console.log("Title Of current page is ", titleOfPage);
 await expect(page).toHaveTitle("STORE");
 
-const url=page.url();
+const url= await page.url();
 console.log("Pageurl is : ", url);
 
 await expect(page).toHaveURL("https://demoblaze.com/");
