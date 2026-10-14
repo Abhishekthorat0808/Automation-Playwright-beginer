@@ -1,7 +1,19 @@
 import {test, expect} from "@playwright/test";
 test("flipKart", async ({page}) => {
 
-    await page.goto("https://www.flipkart.com/");
+console.log("Web Page Open");
+await page.goto("https://demoblaze.com/");
 
-    await page.waitForTimeout(3000);
+ const titleOfPage =page.title();
+console.log("Title Of current page is ", titleOfPage);
+await expect(page).toHaveTitle("STORE");
+
+const url=page.url();
+console.log("Pageurl is : ", url);
+
+await expect(page).toHaveURL("https://demoblaze.com/");
+
+await page.waitForTimeout(3000);
+
+await page.close();
 });
