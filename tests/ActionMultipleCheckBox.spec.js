@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 test("multipleCheckBoxes", async ({ page }) => {
 
 
-
+//multiple checkbox selectionsA
     await page.goto("https://testing.qaautomationlabs.com/checkbox.php");
     let checkbox = [
         "//input[@type='checkbox' and @id='multichk1']",

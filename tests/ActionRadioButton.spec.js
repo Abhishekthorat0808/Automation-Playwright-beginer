@@ -1,5 +1,10 @@
+///At a time only single radio button can selected
+
+
 import { test, expect } from "@playwright/test";
 test("CheckboxRadiobutton", async ({ page }) => {
+
+
 
 await page.goto("https://testing.qaautomationlabs.com/radio-button.php");
 
@@ -54,8 +59,4 @@ console.log("check radio button is truthy");
 // 11. Verify the radio button is required (if expected)
 await expect(radiobutton).toHaveJSProperty('required', false); //if required field make it true
 console.log('PASS: Radio button is required');
-
-
-
-
 });
